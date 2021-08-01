@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
-#define ll long long 
+#define ll long long int
 using namespace std;
+
+ll inf = 1e9;
 
 vector<int> input()
 {
@@ -13,6 +15,17 @@ vector<int> input()
         cin >> arr[i];
     }
     return arr;
+}
+vector<vector<int>> input(int n, int m)
+{
+    cout << "Enter elements in matrix : ";
+    vector<vector<int>> mat(n, vector<int> (m));
+    for(int i =0; i < n; i++){
+        for(int j =0; j < m; j++){
+            cin >> mat[i][j];
+        }
+    }
+    return mat;
 }
 
 void print (vector<vector<int>> v){
