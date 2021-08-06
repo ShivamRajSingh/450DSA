@@ -4,6 +4,13 @@ using namespace std;
 struct Node {
     int data;
     Node* next;
+
+    Node(){}
+    
+    Node(int x){
+        data = x;
+        next = NULL;
+    }
 };
 
 Node* getNewNode (Node *p, int x){
