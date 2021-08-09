@@ -2,6 +2,7 @@
 using namespace std;
 TreeNode* create();
 
+int inf = 1e5;
 class TreeNode {
     public:
         int data;
